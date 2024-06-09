@@ -28,7 +28,22 @@ const UpdateSlider = () => {
 
   window.addEventListener("resize", logWindowWidth);
   window.addEventListener("resize", logWindowWidthDesktop);
+  
+
+  const imageUrls = [
+    '/src/assets/images/a.png',
+    '/src/assets/images/b.png',
+    '/src/assets/images/d.png',
+    
+  ];
+  
+  imageUrls.forEach((imageUrl) => {
+    import(imageUrl); // Import each image URL
+  });
+  
   //data
+
+
   const data = [
     {
       id: 1,
