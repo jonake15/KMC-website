@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer base {
+  body {
+    background-color: #14161b;
+  }
+} */
+
+html{
+  scroll-behavior: smooth;
+  
+}
+
+#image {
+  /* filter: brightness(0.9); */
+  transition: all 0.3s;
+}
+
+.slick-next::before {
+  background-color: blue;
+  font-size: 45px;
+  display: none;
+}
+
+.slick-prev::before {
+  background-color: blue;
+  font-size: 45px;
+  display: none;
+}
+
+#rotate-image {
+  animation: rotation infinite linear 30s; /* Adjust duration and timing as desired */
+  transform: translate(-50%, -50%); /* Center the image within its container */
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+#parent:hover #scale {
+  animation: scale linear 0.2s; /* Adjust duration and timing as desired */
+  /* Center the image within its container */
+  /* transition: all 0.3s ease-in; */
+}
+
+@keyframes scale {
+ 
+  0%{
+    height: 0;
+    
+  }
+  /* 25%{
+    height: 25%;
+    
+  }
+  50%{
+    height: 50%;
+    
+  }
+  75%{
+    height: 75%;
+    
+  } */
+  100%{
+    height: 100%;
+    
+  }
+}
+
+#slow {
+
+  animation: slow linear 0.2s;
+}
+
+@keyframes slow {
+  from {
+    visibility: hidden;
+    transition: all 0.1s ease;
+   
+  }
+  to {
+    visibility: hidden;
+    transition: all 0.1s ease-out;
+  }
+}
+
+
+/* #parent:not(:hover) {
+
+color:blue
+} */
+
+
+#parent:not(:hover) #scale{
+
+  animation: rev linear 0.2s; /* Adjust duration and timing as desired */
+  /* Center the image within its container */
+  transition: all 0.2s ease-out;
+  animation-direction: reverse;
+  }
+
+  @keyframes rev {
+    from {
+      height: 0;
+    }
+    to {
+      height: 10rem;
+    }
+  }
+
+
+  /* menu */
+  #menu-parent:hover #menu-scale {
+    animation: mscale linear 0.2s; /* Adjust duration and timing as desired */
+    /* Center the image within its container */
+    /* transition: all 0.3s ease-in; */
+  }
+  
+  @keyframes mscale {
+   
+    0%{
+      height: 0;
+      
+    }
+    25%{
+      height: 25%;
+      
+    }
+    50%{
+      height: 50%;
+      
+    }
+    75%{
+      height: 75%;
+      
+    }
+    100%{
+      height: 100%;
+      
+    }
+  }
+  
+  /* #slow {
+  
+    animation: slow linear 0.2s;
+  }
+  
+  @keyframes slow {
+    from {
+      visibility: hidden;
+      transition: all 0.1s ease;
+     
+    }
+    to {
+      visibility: hidden;
+      transition: all 0.1s ease-out;
+    }
+  } */
+  
+  
+  /* #parent:not(:hover) {
+  
+  color:blue
+  } */
+  
+  /* 
+  #menu-parent:not(:hover) #menu-scale{
+  
+    animation: mrev linear 0.2s; Adjust duration and timing as desired */
+    /* Center the image within its container 
+    transition: all 0.2s ease-out;
+    animation-direction: reverse;
+    }
+  
+    @keyframes mrev {
+      from {
+        height: 0;
+      }
+      to {
+        height: 10rem;
+      }
+    }
+
+     */
+   
