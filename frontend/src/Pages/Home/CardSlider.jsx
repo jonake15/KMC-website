@@ -3,6 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useState } from "react";
+import slider_1 from "../../assets/images/a.png"
+import slider_2 from "../../assets/images/b.png"
+import slider_3 from "../../assets/images/d.png"
 
 const UpdateSlider = () => {
   const [isMobile, setIsMobile] = useState(false); // State to track mobile view
@@ -30,16 +33,6 @@ const UpdateSlider = () => {
   window.addEventListener("resize", logWindowWidthDesktop);
   
 
-  const imageUrls = [
-    '/src/assets/images/a.png',
-    '/src/assets/images/b.png',
-    '/src/assets/images/d.png',
-    
-  ];
-  
-  imageUrls.forEach((imageUrl) => {
-    import(imageUrl); // Import each image URL
-  });
   
   //data
 
@@ -49,19 +42,19 @@ const UpdateSlider = () => {
       id: 1,
       headline: "12 Meter Electric Coach",
       date: "2 days ago",
-      image_url: "/src/assets/images/a.png",
+      image_url: slider_1,
     },
     {
       id: 2,
       headline: "12 Meter Executive Diesel Coach",
       date: "2 days ago",
-      image_url: "/src/assets/images/b.png",
+      image_url: slider_2,
     },
     {
       id: 3,
       headline: "12 Meter Diesel Coach",
       date: "2 days ago",
-      image_url: "/src/assets/images/d.png",
+      image_url: slider_3,
     },
   ];
 
