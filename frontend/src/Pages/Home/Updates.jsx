@@ -4,6 +4,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useState } from "react";
 
+import slider_1 from "./assets/images/updates/news_1.png"
+import slider_2 from "./assets/images/updates/news_2.png"
+import slider_3 from "./assets/images/updates/news_3.png"
+
 const UpdateSlider = () => {
   const [isMobile, setIsMobile] = useState(false); // State to track mobile view
   const [isDesktop, setIsDesktop] = useState(true); // State to track mobile view
@@ -34,19 +38,19 @@ const UpdateSlider = () => {
       id: 1,
       headline: "Earth Day 2024: Planet Vs Plastic",
       date: "2 days ago",
-      image_url: "/src/assets/images/update/news_1.png",
+      image_url: slider_1,
     },
     {
       id: 2,
       headline: "Are Electric Vehicles Really Better for the Environment? Yes.",
       date: "2 days ago",
-      image_url: "/src/assets/images/update/news_2.png",
+      image_url: slider_2,
     },
     {
       id: 3,
       headline: "Ideas Shaping SUSTAINABILITY in 2024",
       date: "2 days ago",
-      image_url: "/src/assets/images/update/news_3.png",
+      image_url: slider_3,
     },
   ];
 

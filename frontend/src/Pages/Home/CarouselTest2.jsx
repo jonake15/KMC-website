@@ -16,11 +16,14 @@ import "slick-carousel/slick/slick-theme.css";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdPhoneInTalk } from "react-icons/md";
 import { FaRegEnvelope } from "react-icons/fa";
+import video_1 from "../../assets/videos/cover.mp4"
+import video_2 from "../../assets/videos/KMC.mp4"
+import video_3 from "../../assets/videos/Website_video.mp4"
 
 const videos = [
-  { id: 1, url: "/src/assets/videos/cover.mp4" },
-  { id: 2, url: "/src/assets/videos/KMC.mp4" },
-  { id: 3, url: "/src/assets/videos/Website_video.mp4" },
+  { id: 1, url: video_1 },
+  { id: 2, url: video_2 },
+  { id: 3, url: video_3 },
 ];
 
 const Carousel = () => {

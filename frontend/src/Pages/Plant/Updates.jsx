@@ -3,6 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useState } from "react";
+import slider_1 from "./assets/images/slider_1.png"
+import slider_2 from "./assets/images/slider_2.png"
+import slider_3 from "./assets/images/slider_3.png"
 
 const UpdateSlider = () => {
   const [isMobile, setIsMobile] = useState(false); // State to track mobile view
@@ -34,19 +37,19 @@ const UpdateSlider = () => {
       id: 1,
       headline: "Earth Day 2024: Planet Vs Plastic",
       date: "2 days ago",
-      image_url: "/src/Pages/Plant/assets/images/slider_1.png",
+      image_url: slider_1,
     },
     {
       id: 2,
       headline: "Are Electric Vehicles Really Better for the Environment? Yes.",
       date: "2 days ago",
-      image_url: "/src/Pages/Plant/assets/images/slider_2.png",
+      image_url: slider_2
     },
     {
       id: 3,
       headline: "Ideas Shaping SUSTAINABILITY in 2024",
       date: "2 days ago",
-      image_url: "/src/Pages/Plant/assets/images/slider_3.png",
+      image_url: slider_3,
     },
   ];
 
@@ -80,14 +83,14 @@ const UpdateSlider = () => {
         data-aos-duration="800"
       >
         <center>
-          <span className="text-lg">
-            <p className="py-4">Plant Construction Progress</p>
-            <p className="py-4">
+          <span className="text-lg text-left md:text-center">
+            <p className="md:py-4 px-2">Plant Construction Progress</p>
+            <p className="py-4 text-base px-2 md:px-0 md:w-full w-8/12">
               Kiira Vehicle plant start-up facilities (Phase 1) at the Jinga
-              Industrial and Business Park <br /> based on the Force Account
+              Industrial and Business Park based on the Force Account
               Mechanism
             </p>
-            <button className="bg-black hover:bg-gray-700 hover:text-white text-white rounded-full my-5 py-2 px-[30px] focus:outline-none focus:ring focus:ring-black mb-5 ">
+            <button className="bg-black  hover:bg-gray-700 hover:text-white text-white rounded-full my-5 py-2 px-[30px] focus:outline-none focus:ring focus:ring-black mb-5 ">
               Book a visit
             </button>
           </span>
