@@ -3,6 +3,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useState } from "react";
+import slider_1 from "./assets/images/slider_1.png"
+import slider_2 from "./assets/images/slider_2.png"
+import slider_3 from "./assets/images/slider_3.png"
+import slider_4 from "./assets/images/slider_4.png"
+
 
 const UpdateSlider = () => {
   const [isMobile, setIsMobile] = useState(false); // State to track mobile view
@@ -34,25 +39,25 @@ const UpdateSlider = () => {
       id: 1,
       headline: "Collaborate to learn and grow",
       date: "2 days ago",
-      image_url: "/src/Pages/About/assets/images/slider_1.png",
+      image_url: slider_1,
     },
     {
       id: 2,
       headline: "Focus on the customer",
       date: "2 days ago",
-      image_url: "/src/Pages/About/assets/images/slider_2.png",
+      image_url: slider_2,
     },
     {
       id: 3,
       headline: "Innovate sustainable",
       date: "2 days ago",
-      image_url: "/src/Pages/About/assets/images/slider_3.png",
+      image_url: slider_3,
     },
     {
       id: 4,
       headline: "Empower teams",
       date: "2 days ago",
-      image_url: "/src/Pages/About/assets/images/slider_4.png",
+      image_url: slider_4,
     },
   ];
 

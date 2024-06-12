@@ -25,18 +25,18 @@ const Footer = () => {
                 </p>
               </li>
               <li className="flex">
-                <div className="text-3xl ">
+                <a href="https://www.facebook.com/kiiramotors/" className="text-3xl ">
                   <FaFacebookSquare className="" />
-                </div>
-                <span className="text-3xl">
+                </a>
+                <a href="https://www.instagram.com/kiiramotorsofficial?igsh=MWxtanZicnRwcm4wdA==" className="text-3xl">
                   <FaInstagramSquare />
-                </span>
-                <span className="text-3xl">
+                </a>
+                <a href="https://x.com/KiiraMotors?t=HlSrjtZ-qVARNukxF6r_nA&s=08" className="text-3xl">
                   <FaTwitterSquare />
-                </span>
-                <span className="text-3xl">
+                </a>
+                <a href="https://youtube.com/@kiiramotors?si=463ul-BHodb3ZU8V" className="text-3xl">
                   <FaYoutubeSquare />
-                </span>
+                </a>
               </li>
             </ul>
           </div>

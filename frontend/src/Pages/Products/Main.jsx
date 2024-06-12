@@ -15,7 +15,7 @@ const Main = () => {
         </Headroom>
       </div>
       <div
-        className="h-[100vh] md:px-[6rem] flex flex-col justify-center "
+        className="md:h-[100vh] px-[2vh] pt-[10vh] md:px-[6rem] flex flex-col justify-center "
         style={{ backgroundImage: `url(${gradient})`,backgroundPosition:'center', objectFit:'cover' }}
       >
         <h1 className="text-2xl py-4 font-medium">
@@ -53,7 +53,7 @@ const Main = () => {
         </div>
       </div>
 
-      <div className="h-[100vh] md:px-[6rem] flex flex-col justify-center ">
+      <div className="md:h-[100vh] px-[2vh] md:px-[6rem] flex flex-col justify-center ">
         <h1 className="text-2xl py-4 font-medium">
           12 METER KAYOOLA CNG CITY BUS
         </h1>
@@ -89,7 +89,7 @@ const Main = () => {
         </div>
       </div>
 
-      <div className="h-[100vh] md:px-[6rem] flex flex-col justify-center ">
+      <div className="md:h-[100vh] px-[2vh] md:px-[6rem] flex flex-col justify-center ">
         <h1 className="text-2xl py-4 font-medium">
           12 METER KAYOOLA CNG CITY BUS
         </h1>
@@ -125,7 +125,7 @@ const Main = () => {
         </div>
       </div>
 
-      <div className="h-[100vh] md:px-[6rem] flex flex-col justify-center ">
+      <div className="md:h-[100vh] md:px-[6rem] px-[2vh]  flex flex-col justify-center ">
         <h1 className="text-2xl py-4 font-medium">
           12 METER KAYOOLA CNG CITY BUS
         </h1>

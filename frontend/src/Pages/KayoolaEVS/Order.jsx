@@ -1,7 +1,7 @@
 import React from "react";
 import { Fragment } from "react";
 import Navbar from "../../Components/Navbar";
-
+import Headroom from "react-headroom";
 import Footer from "../../Components/Footer";
 import Modal from "../../Components/Modal";
 import { useState } from "react";
@@ -13,7 +13,11 @@ const Order = () => {
   const [showModal, setShowModal] = useState(false);
   return (
     <Fragment>
-      <Navbar />
+      <div className="absolute w-full ">
+        <Headroom>
+          <Navbar />
+        </Headroom>
+      </div>
 
       {/* Carousel */}
       <div
@@ -23,10 +27,10 @@ const Order = () => {
           backgroundRepeat: "no-repeat",
           objectFit: "cover",
         }}
-        className="h-[100vh] relative z-[-1] font-poppins"
+        className="h-[100vh] relative z-[-1] w-12/12  placeholder:font-poppins"
       >
-        <span className="h-full flex  flex-col items-center  absolute w-full z-[4] top-[4rem]">
-          <p className="text-3xl font-bold text-white py-8">
+        <span className="h-full  flex  flex-col items-center  absolute w-full z-[4] top-[4rem]">
+          <p className="text-3xl font-bold w-11/12 md:w-full text-center text-white py-8">
             Create your custom experience
           </p>{" "}
           <div className="flex justify-center w-full gap-8 text-lg">
@@ -37,13 +41,13 @@ const Order = () => {
         <img
           src={carousel}
           alt=""
-          className="relative z-[1] left-[6%] overflow-hidden bottom-[25%] w-11/12"
+          className="relative z-[1] left-[6%] md:top-[-18%] top-[50%] w-11/12 overflow-hidden md:bottom-[25%] "
         />
         <img src={fore} alt="" className="absolute  bottom-[25%] w-full" />
       </div>
 
       {/* Section 1 */}
-      <div className="flex justify-between md:px-[8rem] md:py-[3rem] text-base">
+      <div className="md:flex justify-between md:px-[8rem] md:py-[3rem] text-base">
         <div className=" py-[1.5rem] px-[1.5rem] rounded-2xl cursor-pointer ">
           <div className="border px-8 py-[1rem] rounded-2xl">
             <p className="text-center font-medium pb-[0.5rem]">12 meter</p>
@@ -53,7 +57,7 @@ const Order = () => {
             </div>
           </div>
 
-          <div className=" py-[1.5rem] px-8 rounded-2xl cursor-pointer text-center mt-[10rem]">
+          <div className=" py-[1.5rem] px-8 rounded-2xl cursor-pointer text-center md:mt-[10rem]">
             <p className="text-center font-medium pb-[0.5rem]">Exterior paint</p>
             <div className="flex gap-[1rem] justify-center">
               <input
@@ -93,7 +97,7 @@ const Order = () => {
             </div>
           </div>
 
-          <div className=" py-[1.5rem] px-8 rounded-2xl cursor-pointer text-center mt-[10rem]">
+          <div className=" py-[1.5rem] px-8 rounded-2xl cursor-pointer text-center md:mt-[10rem]">
             <p className="text-center font-medium pb-[0.5rem]">Interior paint</p>
             <div className="flex gap-[1rem] justify-center">
               <input
@@ -127,7 +131,7 @@ const Order = () => {
             </div>
           </div>
 
-          <div className=" py-[1.5rem] px-8 rounded-2xl cursor-pointer text-center mt-[10rem]">
+          <div className=" py-[1.5rem] px-8 rounded-2xl cursor-pointer text-center md:mt-[10rem]">
             <p className="text-center font-medium pb-[0.5rem]">Floor trim</p>
             <div className="flex gap-[1rem] justify-center">
               <input

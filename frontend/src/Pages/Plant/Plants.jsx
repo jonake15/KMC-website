@@ -23,21 +23,21 @@ const Plants = () => {
           backgroundPosition: "center",
           objectFit: "cover",
         }}
-        className="md:h-[100vh] "
+        className="h-[100vh] "
       >
-        <p className="absolute px-4 md:px-0 font-medium w-8/12 text-2xl md:w-full top-[15%] md:top-[40%] md:text-3xl md:left-[35%] flex justify-center ">
+        <p className="absolute font-bold top-[40%] text-3xl left-[35%] flex justify-center ">
           Explore the Vehicle Plants
         </p>
         <img
           src={fore}
           alt=""
-          className="relative  object-cover md:h-[100vh] w-full object-center"
+          className="relative  object-cover h-[100vh] w-full object-center"
         />
       </div>
-      <div className="md:h-[100vh] px-2 md:flex flex-wrap md:flex-nowrap  md:justify-evenly md:items-center ">
-        <span className="md:w-4/12 px-2 ">
-          <p className="font-medium md:w-full w-7/12  text-2xl md:text-3xl py-6">Kiira Vehicle Plant (KVP)</p>
-          <p className="text-base  md:w-full w-7/12">
+      <div className="h-[100vh] flex justify-evenly items-center ">
+        <span className="w-4/12">
+          <p className="font-medium text-3xl py-6">Kiira Vehicle Plant (KVP)</p>
+          <p className="text-base">
             The Kiira Vehicle Plant (KVP) is a state-of-the-art manufacturing
             facility situated on 100 acres in the Jinja Industrial and Business
             Park. Operated by Kiira Motors Corporation (KMC), KVP is dedicated
@@ -46,8 +46,8 @@ const Plants = () => {
           </p>
         </span>
 
-        <span className=" px-2">
-          <img className="md:w-[40rem] h-auto w-[15rem]" src={plant_vid} alt="" />
+        <span>
+          <img className="w-[40rem]" src={plant_vid} alt="" />
         </span>
       </div>
       <div className="h-[100vh] mb-[10rem]">

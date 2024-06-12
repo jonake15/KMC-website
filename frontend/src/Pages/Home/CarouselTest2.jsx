@@ -117,23 +117,23 @@ const Carousel = () => {
         }}
         className=" absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2  text-black cursor-pointer "
       >
-        <a href="https://www.facebook.com/kiiramotors/">
+        <a href="#">
           <div className="text-3xl  rounded-md m-1">
             <FaWhatsapp className="text-white p-1 md:p-0 " />
           </div>
         </a>
 
-        <a href="https://www.instagram.com/kiiramotorsofficial?igsh=MWxtanZicnRwcm4wdA==">
+        <a href="#">
           <div className="text-3xl border rounded-full  m-1">
             <MdPhoneInTalk className="text-white p-2 md:p-1" />
           </div>
         </a>
-        <a href="https://x.com/KiiraMotors?t=HlSrjtZ-qVARNukxF6r_nA&s=08">
+        <a href="#">
           <div className="text-3xl  rounded-md m-1">
             <FaRegEnvelope className="text-white p-1 md:p-0 " />
           </div>
         </a>
-        {/* <a href="https://youtube.com/@kiiramotors?si=463ul-BHodb3ZU8V">
+        {/* <a href="">
           <div className="text-3xl bg-[#D53A54] rounded-md m-1">
             <FaYoutube className="text-white p-1 " />
           </div>

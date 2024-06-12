@@ -45,7 +45,7 @@ const Products = () => {
   return (
     <div className="font-poppins">
       <div className="absolute w-full">
-        <Headroom className="w-[5rem] md:w-full">
+        <Headroom className="w-full">
           <Navbar />
         </Headroom>
       </div>
@@ -94,7 +94,7 @@ const Products = () => {
           }}
         >
           <div
-            className="w-full h-full px-8 rounded-2xl relative z-[2] flex flex-col justify-center items-start"
+            className="w-full h-full px-8 rounded-2xl  z-[1] flex flex-col justify-center items-start"
             style={{
               backgroundImage: `url(${images[7].gradient})`,
               backgroundRepeat: "no-repeat",

@@ -123,7 +123,7 @@ const UpdateSlider = () => {
           className=" flex  flex-row justify-center items-center "
         >
           {isMobile && (
-            <Slider {...settingsMob} className="w-full">
+            <Slider {...settingsMob} className="w-full overflow-hidden">
               {data.map((p) => (
                 <div
                   key={p.id}

@@ -8,6 +8,8 @@ import { IoMdClose } from "react-icons/io";
 import evs from "../assets/images/navbar/evs.png";
 import coach from "../assets/images/navbar/coach.png";
 import chargers from "../assets/images/navbar/chargers.png";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 import a from "../assets/images/navbar/a.png";
 import b from "../assets/images/navbar/b.png";
@@ -16,6 +18,24 @@ import d from "../assets/images/navbar/d.png";
 
 
 const Navbar = () => {
+
+  const navigate = useNavigate();
+  const handleLoginButtonClick = () => {
+    axios.get('http://localhost:3000/redirect-to-login')
+      .then(response => {
+        // Handle successful redirection if needed
+        console.log('Response:', response);
+        console.log('Redirect URL:', response.request.responseURL); // Extract the redirection URL from the response headers
+         window.location.href =  response.request.responseURL;
+        console.log(response);
+      
+      })
+      .catch(error => {
+        // Handle error if redirection fails
+        console.error('Redirection error:', error);
+      });
+  };
+
   const [isHovered, setIsHovered] = useState(false);
   const [isServices, setIsServices] = useState(false);
   const [isDiscoverMore, setIsDiscoverMore] = useState(false);
@@ -450,7 +470,8 @@ const Navbar = () => {
 
           <div id='menu-parent' className="overflow-visible">
           {showMenu && (
-          <div   className="absolute top-0 left-0 w-full h-[100svh] z-10 overflow-y-auto  md:hidden bg-[#1f1f1f]" style={{ transition: "all 0.6s ease" }}>
+          <div   className="absolute overflow-hidden top-0 left-0 w-full h-[120svh] z-[110]   md:hidden bg-[#1f1f1f]"
+           style={{ transition: "all 0.6s ease" }}>
             
               <div id='menu-scale'
                 style={{ transition: "all 4s ease-out" }}
@@ -488,9 +509,9 @@ const Navbar = () => {
                       Services
                       {services && (
                         <ul className="px-6 text-lg">
-                          <li>Contact Manufacturing</li>
-                          <li>Product Support</li>
-                          <li>Engineering Services</li>
+                          <Link to='/contract-manufacturing'>Contract Manufacturing</Link><br/>
+                          <Link to='/product-support'>Product Support</Link><br/>
+                          <Link to='/engineering-services'>Engineering Services</Link><br/>
                           <Link to="/vehicle-hire">Vehicle Hire</Link>
                         </ul>
                       )}
@@ -579,9 +600,13 @@ const Navbar = () => {
                   className="shadow-lg p-4 rounded-lg"
                 >
                   <ul className="flex justify-center items-center  py-4">
-                    <Link to="/login" className="">
-                      Login
-                    </Link>
+                    <button onClick={handleLoginButtonClick} >
+                    
+                    Login
+                 
+                  </button>
+                    
+                    
                     <span className="border-r-2 border-gray-400">&nbsp;</span>
                     <NavLink to="/sign-up" className="px-6 active:underline">
                       SignUp

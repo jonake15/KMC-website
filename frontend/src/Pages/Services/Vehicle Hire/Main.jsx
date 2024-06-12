@@ -14,7 +14,7 @@ const Main = () => {
         </Headroom>
       </div>
       <div
-        className="h-[100vh] gap-[4rem] w-full flex justify-center pt-[15rem] font-poppins"
+        className="h-[100vh] gap-[4rem] w-full flex flex-wrap md:flex-nowrap justify-center pt-[9rem] font-poppins"
         style={{
           backgroundImage: `url(${background})`,
           backgroundPosition: "center",
@@ -22,9 +22,11 @@ const Main = () => {
         }}
       >
         <div id="main">
-          <div className="w-[22rem] h-[29rem] text-white bg-[#555555] p-8 rounded-2xl">
+          <div className="w-[22rem] h-auto text-white bg-[#555555] p-8 rounded-2xl">
             <h1 className="text-3xl font-medium">Vehicle Hire</h1>
-            <p className="text-[1.25rem] py-8">
+            <p  data-aos="fade-up"
+      data-aos-once="true"
+      data-aos-duration="1000" className="text-[1.25rem] py-8">
               Kiira Motors Corporation provides innovative product design,
               engineering, software development and testing to OEMs, automotive
               value chain actors, players in adjacent industries, start-ups,
@@ -32,7 +34,7 @@ const Main = () => {
             </p>
           </div>
         </div>
-        <div className="w-[50rem]">
+        <div className="md:w-6/12 w-11/12">
           <img
             src={cover}
             className="w-full object-cover object-center"
@@ -41,8 +43,8 @@ const Main = () => {
         </div>
       </div>
 
-      <div id="form" className="flex justify-center w-full py-[5rem]">
-        <form className=" grid w-3/12  p-8  rounded-2xl">
+      <div id="form" className="md:flex justify-center w-full py-[5rem]">
+        <form className=" grid md:w-3/12  p-8  rounded-2xl">
           <h1 className=" font-medium text-left  py-5">Order Details</h1>
           <input
             type="text"
@@ -69,8 +71,8 @@ const Main = () => {
           />
 
           <br />
-          <button className=" text-white w-6/12 bg-black rounded-full py-2 px-[30px] focus:outline-none focus:ring focus:ring-white ">
-            Send
+          <button className=" text-white w-9/12 bg-black rounded-full py-2 px-[30px] focus:outline-none focus:ring focus:ring-white ">
+            Request a Quote
           </button>
           <div>
             {/* <Link to="/login">

@@ -25,7 +25,7 @@ const Order = () => {
         className="h-[100vh] relative z-[-1] font-poppins"
       >
         <span className="h-full flex  flex-col items-center  absolute w-full z-[4] top-[5rem]">
-          <p className="text-3xl font-bold text-white py-8">
+          <p className="text-3xl md:w-full w-11/12 font-bold text-white py-8">
             Create your custom experience
           </p>{" "}
           <div className="flex justify-center w-full gap-8 text-lg">
@@ -36,13 +36,13 @@ const Order = () => {
         <img
           src={carousel}
           alt=""
-          className="relative z-[1]  overflow-hidden top-[15%]  w-11/12"
+          className="relative z-[1]  overflow-hidden top-[50%] md:top-[15%]  w-11/12"
         />
         <img src={fore} alt="" className="absolute  bottom-[20%] w-full" />
       </div>
 
       {/* Section 1 */}
-      <div className="flex justify-between md:px-[8rem] md:py-[3rem] text-base font-poppins">
+      <div className="md:flex justify-between md:px-[8rem] md:py-[3rem] text-base font-poppins">
         <div className=" py-[1.5rem] px-[1.5rem] rounded-2xl cursor-pointer ">
           <div className="border px-8 py-[1rem] rounded-2xl">
             <p className="text-center pb-[0.5rem] font-medium">12 meter</p>
@@ -52,7 +52,7 @@ const Order = () => {
             </div>
           </div>
 
-          <div className=" py-[1.5rem] px-8 rounded-2xl cursor-pointer text-center mt-[10rem]">
+          <div className=" py-[1.5rem] px-8 rounded-2xl cursor-pointer text-center md:mt-[10rem]">
             <p className="text-center pb-[0.5rem] font-medium">Exterior paint</p>
             <div className="flex gap-[1rem] justify-center">
               <input
@@ -92,7 +92,7 @@ const Order = () => {
             </div>
           </div>
 
-          <div className=" py-[1.5rem] px-8 rounded-2xl cursor-pointer text-center mt-[10rem]">
+          <div className=" py-[1.5rem] px-8 rounded-2xl cursor-pointer text-center md:mt-[10rem]">
             <p className="text-center pb-[0.5rem] font-medium">Interior paint</p>
             <div className="flex gap-[1rem] justify-center">
               <input
@@ -126,7 +126,7 @@ const Order = () => {
             </div>
           </div>
 
-          <div className=" py-[1.5rem] px-8 rounded-2xl cursor-pointer text-center mt-[10rem]">
+          <div className=" py-[1.5rem] px-8 rounded-2xl cursor-pointer text-center md:mt-[10rem]">
             <p className="text-center pb-[0.5rem] font-medium">Floor trim</p>
             <div className="flex gap-[1rem] justify-center">
               <input
